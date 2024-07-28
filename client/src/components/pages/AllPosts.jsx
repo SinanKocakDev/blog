@@ -42,7 +42,7 @@ const AllPosts = () => {
         <div className="">
           {currentItems?.map((post, i) => (
             <div key={i} className="p-4 mt-2 rounded-lg dark:bg-gray-800 bg-gray-200">
-              <Link to={`/posts/${post._id}`} className="dark:text-white hover:underline">
+              <Link to={`/posts/${post.slug}`} className="dark:text-white hover:underline">
                 <h2 className="text-base font-bold">
                   {truncateTitle(capitalizeTitle(post.title), 60)}
                 </h2>
