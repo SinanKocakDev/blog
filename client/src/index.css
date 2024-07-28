@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    }
+    pre {
+      @apply bg-gray-800 overflow-x-auto w-full my-4 rounded-lg
+    }
+    pre code{
+      @apply overflow-hidden text-sm font-bold text-white
+    }
+
+
+body {
+    font-family: rubik, sans-serif;
+}
+
