@@ -20,7 +20,7 @@ const Contact = () => {
     try {
       if (token && name && email && message) {
         console.log('Send post request');
-        await axios.post('http://localhost:3000/api/auth/contact', { name, email, message, token })
+        await axios.post('/api/auth/contact', { name, email, message, token })
         setToken("")
         recaptchaRef.current.reset()
       } else {

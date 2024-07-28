@@ -10,7 +10,7 @@ const initialState = {
 export const register = createAsyncThunk(
   "auth/register",
   async (userCredentials) => {
-      const request = await axios.post('http://localhost:3000/api/auth/register', userCredentials)
+      const request = await axios.post('/api/auth/register', userCredentials)
       const response = await request.data
       localStorage.setItem('token', response.token)
       localStorage.setItem('username', response.username)
@@ -21,7 +21,7 @@ export const register = createAsyncThunk(
 export const login = createAsyncThunk(
   "auth/login",
   async (userCredentials) => {
-      const request = await axios.post('http://localhost:3000/api/auth/login', userCredentials)
+      const request = await axios.post('/api/auth/login', userCredentials)
       const response = await request.data
       localStorage.setItem('token', response.token)
       localStorage.setItem('username', response.username)

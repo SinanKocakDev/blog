@@ -17,9 +17,6 @@ const Create = () => {
       body: body,
     };
 
-    console.log(title,"title:::")
-    console.log(body, "body:::::")
-
     dispatch(createPost(newPost))
       .then(() => {
         navigate('/dashboard');
